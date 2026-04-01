@@ -1,3 +1,9 @@
+//! File: src\smtp.rs
+//! Author: Hadi Cahyadi <cumulus13@gmail.com>
+//! Date: 2026-04-01
+//! Description: SMTP transport helpers and high-level commands.
+//! License: MIT
+
 //! SMTP transport helpers and high-level commands.
 
 use anyhow::{Context, Result};

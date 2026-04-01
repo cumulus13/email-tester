@@ -1,3 +1,9 @@
+// File: src\config.rs
+// Author: Hadi Cahyadi <cumulus13@gmail.com>
+// Date: 2026-04-01
+// Description: Persistent TOML configuration management.
+// License: MIT
+
 //! Persistent TOML configuration management.
 
 use anyhow::Result;

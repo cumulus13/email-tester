@@ -1,3 +1,9 @@
+//! File: src\logger.rs
+//! Author: Hadi Cahyadi <cumulus13@gmail.com>
+//! Date: 2026-04-01
+//! Description: Colorized, timestamped structured logger.
+//! License: MIT
+
 //! Colorized, timestamped structured logger.
 
 use chrono::Local;

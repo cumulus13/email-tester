@@ -1,3 +1,9 @@
+// File: src\cli.rs
+// Author: Hadi Cahyadi <cumulus13@gmail.com>
+// Date: 2026-04-01
+// Description: CLI argument definitions using clap derive.
+// License: MIT
+
 //! CLI argument definitions using clap derive.
 
 use clap::{ArgAction, Parser, Subcommand};

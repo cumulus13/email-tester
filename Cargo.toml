@@ -4,7 +4,7 @@ bin = [
 
 [package]
 name = "email-tester"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 authors = [
     "Hadi Cahyadi <cumulus13@gmail.com>",
