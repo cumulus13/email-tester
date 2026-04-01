@@ -1,0 +1,71 @@
+bin = [
+    { name = "email-tester", path = "src/main.rs" },
+]
+
+[package]
+name = "email-tester"
+version = "1.0.0"
+edition = "2021"
+authors = [
+    "Hadi Cahyadi <cumulus13@gmail.com>",
+]
+description = "A robust, colorized SMTP email tester with detailed logging and flexible server configuration"
+homepage = "https://github.com/cumulus13/email-tester"
+repository = "https://github.com/cumulus13/email-tester"
+license = "MIT"
+keywords = [
+    "smtp",
+    "email",
+    "tester",
+    "mail",
+    "cli",
+]
+readme = "README.md"
+
+[dependencies]
+colored = "=2.1.0"
+serde_json = "=1.0.114"
+log = "=0.4.21"
+env_logger = "=0.10.2"
+anyhow = "=1.0.81"
+rpassword = "=7.3.1"
+toml = "=0.5.11"
+dirs = "=5.0.1"
+hostname = "=0.3.1"
+
+[dependencies.clap]
+version = "=4.4.18"
+features = [
+    "derive",
+    "cargo",
+    "env",
+]
+
+[dependencies.lettre]
+version = "=0.10.4"
+default-features = false
+features = [
+    "smtp-transport",
+    "native-tls",
+    "builder",
+    "pool",
+]
+
+[dependencies.chrono]
+version = "=0.4.35"
+features = [
+    "serde",
+]
+
+[dependencies.serde]
+version = "=1.0.197"
+features = [
+    "derive",
+]
+
+[dependencies.native-tls]
+version = "=0.2.11"
+
+[profile.release]
+opt-level = 3
+strip = true
