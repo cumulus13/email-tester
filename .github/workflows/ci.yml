@@ -87,8 +87,8 @@ jobs:
         run: cargo test --verbose --all-features
         continue-on-error: false
       
-      - name: Run doc tests
-        run: cargo test --doc
+      # - name: Run doc tests
+      #   run: cargo test --doc
 
   coverage:
     name: Code Coverage
