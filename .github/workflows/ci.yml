@@ -5,9 +5,9 @@ on:
     branches: [ main, master, develop ]
   pull_request:
     branches: [ main, master, develop ]
-  schedule:
+  # schedule:
     # Run daily at 00:00 UTC
-    - cron: '0 0 * * *'
+    # - cron: '0 0 * * *'
 
 env:
   CARGO_TERM_COLOR: always
